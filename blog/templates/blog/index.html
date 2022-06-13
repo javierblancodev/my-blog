@@ -5,5 +5,42 @@
 {% endblock title %}
 
 {% block content %}
-    <h1>Welcome to my blog</h1>
+    <header id="main-navigation">
+        <h1><a href="">Javier's Blog</a></h1>
+        <nav>
+            <a href="">All Posts</a>
+        </nav>
+    </header>
+
+    <section id="welcome">
+        <Header>
+            <img src="" alt="Javier - The Author of this blog">
+            <h2>Javier's Blog</h2>
+        </Header>
+        <p>Hi, I am Javier and I love to talk about tech and nature!</p>
+    </section>
+
+    <section id="latest-thoughts">
+        <h2>My latest Thoughts</h2>
+
+        <ul>
+            <li>
+                <article class="post">
+                    <a href="">
+                        <img src="" alt="Mountain Hiking">
+                        <div class="post__content">
+                            <h3>Mountain Hiking</h3>
+                            <p>There is nothing like the views you get when hiking in the mountains! And I was not even prepared for what happened whilst I was enjoying the view!</p>
+                        </div>
+                    </a>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    <section id="about">
+        <h2>WHat I do</h2>
+        <p>I love programming, I love helping other people, and enjoy exploring new technologies in general!</p>
+        <p>My goal is to keep on growing as a developer, and if I could help you to do the same, I would be so happy!</p>
+    </section>
 {% endblock content %}
