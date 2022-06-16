@@ -1,8 +1,13 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block title %}
     My Blog
 {% endblock title %}
+
+{% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/index.css' %}">
+{% endblock %}
 
 {% block content %}
     <header id="main-navigation">
@@ -13,14 +18,14 @@
     </header>
 
     <section id="welcome">
-        <Header>
+        <header>
             <img src="" alt="Javier - The Author of this blog">
             <h2>Javier's Blog</h2>
-        </Header>
+        </header>
         <p>Hi, I am Javier and I love to talk about tech and nature!</p>
     </section>
 
-    <section id="latest-thoughts">
+    <section id="latest-posts">
         <h2>My latest Thoughts</h2>
 
         <ul>
@@ -39,7 +44,7 @@
     </section>
 
     <section id="about">
-        <h2>WHat I do</h2>
+        <h2>What I do</h2>
         <p>I love programming, I love helping other people, and enjoy exploring new technologies in general!</p>
         <p>My goal is to keep on growing as a developer, and if I could help you to do the same, I would be so happy!</p>
     </section>
