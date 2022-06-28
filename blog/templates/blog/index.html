@@ -6,6 +6,7 @@
 {% endblock title %}
 
 {% block css_files %}
+    <link rel="stylesheet" href="{% static 'blog/post.css' %}">
     <link rel="stylesheet" href="{% static 'blog/index.css' %}">
 {% endblock %}
 
@@ -13,7 +14,7 @@
 
     <section id="welcome">
         <header>
-            <img src={% static 'blog/images/max.png' %} alt="Javier - The Author of this blog">
+            <img src={% static 'blog/images/IMG_4010.jpg' %} alt="Javier - The Author of this blog">
             <h2>Javier's Blog</h2>
         </header>
         <p>Hi, I am Javier and I love to talk about tech and nature!</p>
@@ -23,7 +24,9 @@
         <h2>My latest Thoughts</h2>
 
         <ul>
-            {% include 'blog/includes/post-preview.html' %}
+            {% for post in posts %}
+                {% include 'blog/includes/post-preview.html' %}
+            {% endfor %}
         </ul>
     </section>
 
